@@ -1,0 +1,129 @@
+.project__information {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.swiper__wrapper {
+  display: flex;
+  flex-direction: row;
+  height: 40vh;
+  width: 80%;
+  margin-left: 6rem;
+}
+
+.item {
+  flex: 1;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 0.8s ease;
+}
+.item:hover {
+  flex: 7;
+  background-size: fill;
+}
+
+h2 {
+  font-size: 2.5rem !important;
+  margin-bottom: 10rem !important;
+  color: var(--primary-color) !important;
+}
+
+h5 {
+  font-size: 1.5rem !important;
+  color: var(--primary-color) !important;
+}
+
+ul li i {
+  font-size: 0.9rem;
+  color: var(--neutral-1) !important;
+  margin-right: 5px;
+}
+
+ul {
+  padding-left: 10px !important;
+  line-height: 1.6rem;
+  color: var(--primary-color) !important;
+}
+
+.wrap-effect-1 {
+  .item {
+    &:first-of-type {
+      background-image: url("../image/coffee-1.png");
+    }
+    &:nth-of-type(2) {
+      background-image: url("../image/coffee-2.png");
+    }
+    &:nth-of-type(3) {
+      background-image: url("../image/coffee-3.png");
+    }
+  }
+}
+
+.wrap-effect-2 {
+  .item {
+    &:first-of-type {
+      background-image: url("../image/weather-app.png");
+    }
+  }
+}
+
+.wrap-effect-3 {
+  .item {
+    &:first-of-type {
+      background-image: url("../image/recipe-1.png");
+    }
+    &:nth-of-type(2) {
+      background-image: url("../image/recipe-2.png");
+    }
+    &:nth-of-type(3) {
+      background-image: url("../image/recipe-3.png");
+    }
+  }
+}
+
+.wrap-effect-4 {
+  .item {
+    &:first-of-type {
+      background-image: url("../image/todo-1.png");
+    }
+    &:nth-of-type(2) {
+      background-image: url("../image/todo-2.png");
+    }
+    &:nth-of-type(3) {
+      background-image: url("../image/todo-3.png");
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .project__information {
+    width: 80% !important;
+  }
+
+  .swiper__wrapper {
+    width: 100% !important;
+    margin-left: 0px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .project__wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+
+  .swiper__wrapper {
+    margin-bottom: 7rem;
+  }
+
+  h2{
+    margin-bottom: 5.2rem !important;
+  }
+  .project__information {
+    width: 100% !important;
+  }
+}
